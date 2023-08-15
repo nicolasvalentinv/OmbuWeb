@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Aprendiendo JavaScript</title>
+    <title>OmbuGame</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Agregar enlaces a Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
@@ -12,46 +12,34 @@
 <body>
 
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-black">
         <div class="container">
-            <a class="navbar-brand" href="#">Aprendiendo JavaScript</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+            <a class="navbar-brand" href="#">
+                <img src="./img/LogoOmbu.PNG" alt="Logo" class="logo">
+                OmbuGame
+            </a>
         </div>
     </nav>
 
+    
     <div class="container">
         <div class="row">
             <div class="col-md-6">
                 <div class="pregunta-section">
-                    <h1>Nivel <span id="nivelNumero">1</span></h1>
-                    <h2 id="nivelCategoria">Categoría</h2>
-                    <img id="imagenCategoria" src="" alt="Imagen de categoría">
-                    <p id="pregunta">¿Pregunta aquí?</p>
-                    <div class="progress-container">
-                        <div id="barraProgreso" class="progress"></div>
-                    </div>
+                    <h2 id="nivelCategoria"></h2>
+                    <img id="imagenCategoria" src="" alt="Imagen de la categoría">
+                    <p id="pregunta"><strong></strong></p>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="respuesta-section">
                     <h2>Respuesta:</h2>
-                    <textarea id="respuestaInput" class="form-control" rows="4"></textarea>
+                    <div class="code-editor">
+                        <pre><code id="respuestaInput" class="language-javascript"></code></pre>
+                    </div>
+                    <div class="respuesta-input">
+                        <input type="text" id="respuestaText" class="form-control mt-2" placeholder="Escribe tu respuesta...">
+                    </div>
                     <button id="verificar" class="btn btn-primary mt-2">Verificar</button>
                     <p id="resultado" class="mt-2"></p>
                     <button id="siguienteNivelBtn" class="btn btn-primary mt-2" disabled>Avanzar al siguiente nivel</button>
@@ -61,7 +49,5 @@
     </div>
 
     <script src="script.js"></script>
-    <!-- Agregar enlaces a Bootstrap 5 JS (opcional, para componentes interactivos) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
