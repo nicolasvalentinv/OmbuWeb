@@ -1,19 +1,53 @@
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #333; /* Cambia el color de fondo */
+    color: white;
+    position: relative;
     min-height: 100vh;
-    background-color: #00406E;
-}
-
-.navbar {
-    margin-bottom: 20px;
-}
-
-.logo {
-    height: 70px; /* Ajusta la altura según tus necesidades */
-    width: auto; /* Ajusta el ancho automáticamente según la altura */
-    margin-right: 10px; /* Margen derecho para separar el logo del título */
-}
+  }
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292929;
+    padding: 1rem 2rem;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-links li {
+    text-transform: uppercase;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
 
 .container {
     max-width: 800px;
@@ -102,6 +136,18 @@ body {
 #opciones input[type="radio"] {
     margin-right: 10px;
 }
+
+  
+  /* Pie de página */
+  .footer {
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 
 
 @media (max-width: 768px) {
