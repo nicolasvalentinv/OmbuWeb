@@ -30,11 +30,11 @@ body {
     background-color: #dae7e9;
   }
   
-  .container {
+  .containerAnswer {
     max-width: 1300px;
     height: 500px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 100px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -197,7 +197,71 @@ body {
     width: 100px;
   }
   
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+   
+  
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: CercoDEMO-Regular;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .tag {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    flex: 1;
+    max-width: calc(50% - 40px); /* 50% con margen */
+    box-sizing: border-box;
+    font-family: CercoDEMO-Regular;
+  }
+  
+  .centered-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Asegura que la imagen esté por encima del contenido */
+  }
+  
+  .centered-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 
+  .tag h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .tag p {
+    font-size: 16px;
+    
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  
   
   @media (max-width:700px){
     .img-carousel{
