@@ -1,0 +1,211 @@
+@font-face {
+    font-family: CercoDEMO-Medium;
+    src: url(/fuentes/CercoDEMO-Medium.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Regular;
+    src: url(/fuentes/CercoDEMO-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Light;
+    src: url(/fuentes/CercoDEMO-Light.otf);
+  }
+  @font-face {
+    font-family: CercoDEMO-Bold;
+    src: url(/fuentes/CercoDEMO-Bold.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Black;
+    src: url(/fuentes/CercoDEMO-Black.otf);
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #dae7e9;
+  }
+  
+  .container {
+    max-width: 1300px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+  }
+  
+  .question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: CercoDEMO-Regular;
+    color: rgb(37, 37, 37);
+  }
+  
+  
+  .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .options button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6e6e6e;
+    color: white;
+  }
+
+  #checkButton {
+    background-color: transparent;
+    margin-top: 20px;
+    border: 2px solid rgb(176, 226, 169);
+    color: #090a0a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #checkButton:hover {
+    background-color: #8bd498;
+    color: white;
+  }
+ 
+  #nextButton {
+    background-color: transparent;
+    margin-top: 20px;
+    border: 2px solid rgb(176, 226, 169);
+    color: #090a0a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Mantén los estilos anteriores */
+
+  #answer {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+
+  .form{
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  .card-text-footer{
+    font-family: CercoDEMO-light;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 10pt;
+    color: rgb(37, 37, 37);
+  }
+  
+  .box4{
+    text-align: center;
+    color: rgb(172, 172, 172);
+  }
+  
+  .div-box5{
+    font-family: CercoDEMO-Medium;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 18pt;
+    color: rgb(37, 37, 37);
+  }
+  
+  .ul1{
+    font-family: CercoDEMO-Medium;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 10pt;
+    color: rgba(3, 3, 3, 0.815);
+  }
+  
+  .ul2{
+    font-family: CercoDEMO-Medium;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 10pt;
+    color: rgba(2, 2, 2, 0.815);
+  }
+  
+  .titulo-footer{
+    font-family: CercoDEMO-Medium;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-size: 16pt;
+    color: rgb(2, 2, 2);
+  }
+  
+  .container_flex2{
+    background-color: rgb(243, 241, 212);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+  }
+  
+  .box7{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font: 20px;
+  }
+  
+  .box8{
+    color: rgb(44, 44, 44);
+    font-family: CercoDEMO-Regular;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  .padre{
+    background-color: rgb(45, 46, 46);
+    font-family: CercoDEMO-Regular;
+    font-size: 8pt;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .img-logo-footer{
+    position: relative;
+    left: 100px;
+    height: 6rem;
+    width: 100px;
+  }
+  
+
+  
+  @media (max-width:700px){
+    .img-carousel{
+      height: 45vh;
+    }
+  }
+  @media (max-width:450px){
+    .img-carousel{
+      height: 30vh;
+    }
+  }

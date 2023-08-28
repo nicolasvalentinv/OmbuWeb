@@ -1,0 +1,264 @@
+@font-face {
+    font-family: CercoDEMO-Medium;
+    src: url(/fuentes/CercoDEMO-Medium.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Regular;
+    src: url(/fuentes/CercoDEMO-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Light;
+    src: url(/fuentes/CercoDEMO-Light.otf);
+  }
+  @font-face {
+    font-family: CercoDEMO-Bold;
+    src: url(/fuentes/CercoDEMO-Bold.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Black;
+    src: url(/fuentes/CercoDEMO-Black.otf);
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    background-color: #dae7e9; /* Cambia el color de fondo */
+    color: white;
+    position: relative;
+    min-height: 100vh;
+  }
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+  
+    .navbar-brand, .navbar-brand:hover, .navbar-brand:visited{
+      color: #7a6d49;
+    }
+    
+    
+    .navbar-toggler{
+      border-color: #0A6BA4 !important;
+    }
+    
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .nav-links li {
+      text-transform: uppercase;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+      }
+     
+      .tituloPregunta{
+        font-size:larger;
+        font-family: CercoDEMO-Regular;
+        color: rgb(37, 37, 37);
+     } 
+
+     .question{
+        font-size: 30px;
+        font-family: CercoDEMO-Regular;
+        color: rgb(37, 37, 37);
+     }
+      
+      .question-image {
+        max-width: 100%;
+        height: 400px;
+        margin-top: 10px;
+      }
+      
+      .question-container {
+        margin-bottom: 20px;
+      }
+      
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      
+      .btn {
+        width: 400px;
+        padding: 10px;
+        background-color: #e4d99f;
+        color: #000000;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-family: CercoDEMO-Regular;
+      }
+      
+      .btn:hover {
+        background-color: #2980b9;
+      }
+      
+      .correct {
+        background-color: #27ae60;
+      }
+      
+      #next-button {
+        position: absolute;
+        bottom: 30px;
+        right: 0px;
+      }
+  
+
+      /* BARRA PROGRESO */
+      .progress-container {
+        width: 100%;
+        height: 20px;
+        background-color: #eee;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      
+      .progress-bar {
+        height: 100%;
+        width: 0;
+        background-color: #206423;
+        border-radius: 10px;
+        transition: width 0.3s;
+      }
+
+      .progress-bar.wrong {
+        background-color: #e74c3c; /* Color rojo para respuestas incorrectas */
+      }
+
+      .form{
+        border-radius: 3px;
+        text-align: center;
+      }
+      
+      .card-text-footer{
+        font-family: CercoDEMO-light;
+        border-radius: 10px;
+        text-align: center;
+        padding: 15px;
+        font-size: 10pt;
+        color: rgb(37, 37, 37);
+      }
+      
+      .box4{
+        text-align: center;
+        color: rgb(172, 172, 172);
+      }
+      
+      .div-box5{
+        font-family: CercoDEMO-Medium;
+        border-radius: 10px;
+        text-align: center;
+        padding: 15px;
+        font-size: 18pt;
+        color: rgb(37, 37, 37);
+      }
+      
+      .ul1{
+        font-family: CercoDEMO-Medium;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px;
+        font-size: 10pt;
+        color: rgba(3, 3, 3, 0.815);
+      }
+      
+      .ul2{
+        font-family: CercoDEMO-Medium;
+        border-radius: 10px;
+        text-align: center;
+        padding: 15px;
+        font-size: 10pt;
+        color: rgba(2, 2, 2, 0.815);
+      }
+      
+      .titulo-footer{
+        font-family: CercoDEMO-Medium;
+        border-radius: 10px;
+        text-align: center;
+        padding: 15px;
+        font-size: 16pt;
+        color: rgb(2, 2, 2);
+      }
+      
+      .container_flex2{
+        background-color: rgb(243, 241, 212);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%
+      }
+      
+      .box7{
+        display: flex;
+        justify-content: space-evenly;
+        color: white;
+        font: 20px;
+      }
+      
+      .box8{
+        color: rgb(44, 44, 44);
+        font-family: CercoDEMO-Regular;
+        text-align: center;
+        font-size: 12px;
+      }
+      
+      .padre{
+        background-color: rgb(45, 46, 46);
+        font-family: CercoDEMO-Regular;
+        font-size: 8pt;
+        color: white;
+        text-align: center;
+        width: 100%;
+      }
+      
+      .img-logo-footer{
+        position: relative;
+        left: 100px;
+        height: 6rem;
+        width: 100px;
+      }
+      
+    
+      
+      @media (max-width:700px){
+        .img-carousel{
+          height: 45vh;
+        }
+      }
+      @media (max-width:450px){
+        .img-carousel{
+          height: 30vh;
+        }
+      }
