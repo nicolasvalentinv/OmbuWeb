@@ -27,7 +27,8 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #dae7e9;
+    background-color: #ffffff;
+    overflow-x: hidden;
   }
   
   .containerAnswer {
@@ -94,6 +95,16 @@ body {
   /* Mantén los estilos anteriores */
 
   #answer {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+  }
+
+  #answerBody {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -197,17 +208,29 @@ body {
     width: 100px;
   }
   
-  .container {
-    max-width: 100%;
+  .containerIntro {
+    max-width: 70%;
     margin: 0 auto;
+    margin-bottom: 50px;
     padding: 20px;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .containerCard1{
+    max-width: 50%;
+    margin-left: 50px;
+  }
    
-  
+  .card-text{
+    font-family: CercoDEMO-Regular;
+  }
+
+  .card-body{
+    font-family: CercoDEMO-Black;
+  }
   
   h1 {
     font-size: 28px;
@@ -261,15 +284,258 @@ body {
     margin-top: 20px;
   }
   
+
+  .bienvenida-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-image: url('./img/backgroundgradiant.png'); /* Cambia la ruta por la ubicación de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+  }
   
+  /* Estilos para el título de bienvenida */
+  .titulo-bienvenida {
+    font-size: 4rem;
+    font-family: CercoDEMO-Black;
+    color: #b2cace;
+    margin: 0;
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(-20px);
+    animation: fadeSlideIn 3.5s ease-in-out forwards;
+  }
   
-  @media (max-width:700px){
-    .img-carousel{
-      height: 45vh;
+  /* Estilos para el mensaje de bienvenida */
+  .mensaje-bienvenida {
+    font-size: 1.5rem;
+    font-family: CercoDEMO-Medium;
+    color: #aa4eb6;
+    max-width: 50%;
+    margin-top: 50px;
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(20px);
+    animation: fadeSlideIn 2.5s 1.5s ease-in-out forwards;
+  }
+  .container {
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #111111;
+    color: #fff;
+    font-family: CercoDEMO-Light;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .loader {
+    display: none;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  
+  /* Animación para mostrar y desplazar elementos */
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
-  @media (max-width:450px){
-    .img-carousel{
-      height: 30vh;
+
+  .img-frontend{
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(-20px);
+    animation: fadeSlideIn 3.5s ease-in-out forwards;
+  }
+  .containerIntro2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-image: url('./img/backgroundgradiant.png'); /* Cambia la ruta por la ubicación de tu imagen */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+  }
+
+  .titulo-introhtml{
+    font-size: 2.0rem;
+    font-family: CercoDEMO-Black;
+    color: #b2cace;
+    margin-top: 140px;
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(-20px);
+    animation: fadeSlideIn 7.5s ease-in-out forwards;
+  }
+
+
+  .texto-etiqueta{
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: CercoDEMO-Medium;
+    color: #000000;
+    max-width: 50%;
+    margin-top: 50px;
+}
+
+  .texto-introhtml{
+    font-size: 1.2rem;
+    font-family: CercoDEMO-Medium;
+    color: #000000;
+    max-width: 50%;
+    margin-top: 50px;
+  }
+  
+  .container-card1{
+    margin-left: 40px;
+    margin-bottom: 100px;
+  }
+
+  .card-img-top-header{
+    width: 1200px;
+    height: 600px;
+  }
+  .dropdown-item{
+    font-family: CercoDEMO-Regular;
+  }
+
+
+
+
+
+
+
+
+
+  @media (max-width:900px){
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      overflow-x: hidden;
     }
+
+    .bienvenida-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+      max-width: 55vh;
+      background-image: url('./img/backgroundgradiant.png'); /* Cambia la ruta por la ubicación de tu imagen */
+      background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+      background-position: center; /* Centra la imagen en el contenedor */
+    }
+
+    .mensaje-bienvenida {
+      font-size: 1.2rem;
+      font-family: CercoDEMO-Medium;
+      color: #aa4eb6;
+      max-width: 50%;
+      margin-top: 50px;
+      opacity: 0; /* Inicialmente oculto */
+      transform: translateY(20px);
+      animation: fadeSlideIn 2.5s 1.5s ease-in-out forwards;
+    }
+
+    .titulo-bienvenida {
+      font-size: 1.5rem;
+      font-family: CercoDEMO-Black;
+      color: #b2cace;
+      margin: 0;
+      opacity: 0; /* Inicialmente oculto */
+      transform: translateY(-20px);
+      animation: fadeSlideIn 3.5s ease-in-out forwards;
+    }
+    .texto-etiqueta{
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: CercoDEMO-Medium;
+      color: #000000;
+      max-width: 50%;
+      margin-top: 50px;
+  }
+  .texto-introhtml{
+    font-size: 1.1rem;
+    font-family: CercoDEMO-Medium;
+    color: #000000;
+    height: 60vh;
+    max-width: 50%;
+    margin-top: 50px;
+  }
+
+  
+  
+  }
+  @media (max-width:400px){
+
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .bienvenida-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      max-width: 55vh;
+      background-image: url('./img/backgroundgradiant.png'); /* Cambia la ruta por la ubicación de tu imagen */
+      background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+      background-position: center; /* Centra la imagen en el contenedor */
+    }
+
+    .mensaje-bienvenida {
+      font-size: 1.2rem;
+      font-family: CercoDEMO-Medium;
+      color: #aa4eb6;
+      max-width: 50%;
+      margin-top: 50px;
+      opacity: 0; /* Inicialmente oculto */
+      transform: translateY(20px);
+      animation: fadeSlideIn 2.5s 1.5s ease-in-out forwards;
+    }
+
+    .titulo-bienvenida {
+      font-size: 1.5rem;
+      font-family: CercoDEMO-Black;
+      color: #b2cace;
+      margin: 0;
+      opacity: 0; /* Inicialmente oculto */
+      transform: translateY(-20px);
+      animation: fadeSlideIn 3.5s ease-in-out forwards;
+    }
+    .texto-etiqueta{
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: CercoDEMO-Medium;
+      color: #000000;
+      max-width: 50%;
+      margin-top: 50px;
+  }
+  
   }

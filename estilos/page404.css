@@ -1,0 +1,36 @@
+@font-face {
+    font-family: CercoDEMO-Medium;
+    src: url(/fuentes/CercoDEMO-Medium.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Regular;
+    src: url(/fuentes/CercoDEMO-Regular.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Light;
+    src: url(/fuentes/CercoDEMO-Light.otf);
+  }
+  @font-face {
+    font-family: CercoDEMO-Bold;
+    src: url(/fuentes/CercoDEMO-Bold.otf);
+  }
+  
+  @font-face {
+    font-family: CercoDEMO-Black;
+    src: url(/fuentes/CercoDEMO-Black.otf);
+  }
+
+body {
+    font-family: CercoDEMO-Regular;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+
+  .p{
+    font-family: CercoDEMO-Regular;
+  }

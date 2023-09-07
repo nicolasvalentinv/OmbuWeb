@@ -9,13 +9,13 @@ let currentQuestionIndex = 0;
 const questions = [
     {
       question: "¿Qué etiqueta se utiliza para crear un párrafo en HTML?",
-      options: ["<p>", "<para>", "<paragraph>", "<text>"],
+      options: ["<para>", "<p>", "<paragraph>", "<text>"],
       correctAnswer: "<p>"
     },
     {
-      question: "¿Cuál es la etiqueta correcta para crear un enlace?",
-      options: ["<a>", "<link>", "<href>", "<anchor>"],
-      correctAnswer: "<a>"
+      question: "¿Qué etiqueta se utiliza para agrupar contenido de navegación en una página web?",
+      options: ["<href>", "<section>", "<nav>", "<header>"],
+      correctAnswer: "<nav>"
     },
     {
       question: "¿Qué etiqueta se utiliza para insertar una imagen?",
@@ -23,9 +23,9 @@ const questions = [
       correctAnswer: "<img>"
     },
     {
-      question: "¿Cuál es la etiqueta que define el encabezado de una tabla?",
-      options: ["<thead>", "<th>", "<table-header>", "<tr>"],
-      correctAnswer: "<thead>"
+      question: "¿Cuál de las siguientes etiquetas se utiliza para definir la estructura de encabezado de una página web?",
+      options: ["<body>", "<header>", "<table-header>", "<nav>"],
+      correctAnswer: "<header>"
     },
     {
       question: "¿Qué etiqueta se usa para crear una lista desordenada?",
@@ -33,9 +33,9 @@ const questions = [
       correctAnswer: "<ul>"
     },
     {
-      question: "¿Cuál es la etiqueta correcta para un salto de línea?",
-      options: ["<br>", "<newline>", "<lb>", "<linebreak>"],
-      correctAnswer: "<br>"
+      question: "¿Cuál de las siguientes etiquetas se utiliza para agrupar contenido relacionado en una página web?",
+      options: ["<nav>", "<newline>", "<section>", "<linebreak>"],
+      correctAnswer: "<section>"
     },
     {
       question: "¿Qué etiqueta se utiliza para resaltar un texto importante?",
@@ -43,19 +43,19 @@ const questions = [
       correctAnswer: "<strong>"
     },
     {
-      question: "¿Cuál es la etiqueta que define un enlace a un archivo externo?",
-      options: ["<link>", "<a>", "<external>", "<href>"],
-      correctAnswer: "<link>"
+      question: "¿Qué etiqueta se utiliza para crear un enlace a otra página web en HTML?",
+      options: ["<link>", "<a>", "<url>", "<href>"],
+      correctAnswer: "<a>"
     },
     {
-      question: "¿Qué etiqueta se utiliza para crear una línea horizontal?",
-      options: ["<hr>", "<line>", "<horizontal>", "<linebreak>"],
-      correctAnswer: "<hr>"
+      question: "¿Qué se coloca dentro del elemento <body> en un documento HTML?",
+      options: ["Etiquetas de estilo CSS.", "Encabezados de la página.", "Contenido visible de la página, como texto, imágenes y enlaces.", "JavaScript para la interacción del usuario."],
+      correctAnswer: "Contenido visible de la página, como texto, imágenes y enlaces."
     },
     {
-      question: "¿Cuál es la etiqueta correcta para definir una lista ordenada?",
-      options: ["<ol>", "<ul>", "<list>", "<ordered>"],
-      correctAnswer: "<ol>"
+      question: "¿Qué hace el atributo href en una etiqueta <a> en HTML?",
+      options: ["Define el título del enlace.", "Especifica el color del enlace.", "Indica la dirección o URL de destino del enlace.", "Establece el ancho del enlace."],
+      correctAnswer: "Indica la dirección o URL de destino del enlace."
     },
     // Agrega más preguntas aquí
   ];

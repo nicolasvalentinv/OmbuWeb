@@ -32,6 +32,7 @@ body {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   
 }
 
@@ -315,7 +316,7 @@ body {
   .titulo-bienvenida {
     font-size: 4rem;
     font-family: CercoDEMO-Black;
-    color: #fcfcfc;
+    color: #b2cace;
     margin: 0;
     opacity: 0; /* Inicialmente oculto */
     transform: translateY(-20px);
@@ -356,6 +357,8 @@ body {
     animation: spin 2s linear infinite;
     margin: 20px auto;
   }
+
+
   
   @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -372,12 +375,22 @@ body {
     }
   }
   
-
+ .dropdown-item{
+    font-family: CercoDEMO-Regular;
+  }
   
   @media (max-width:700px){
-    .img-carousel{
-      height: 45vh;
-    }
+    body {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  background-color: #dae7e9; /* Cambia el color de fondo */
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
   }
   @media (max-width:450px){
     .img-carousel{

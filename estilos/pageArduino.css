@@ -27,7 +27,7 @@
     margin: 0;
     margin-bottom: 60px;
     padding: 0;
-    background-color: #dae7e9; /* Cambia el color de fondo */
+    background-color: #f5f5f5; /* Cambia el color de fondo */
     color: white;
     position: relative;
     min-height: 100vh;
@@ -71,18 +71,20 @@
       cursor: pointer;
     }
 
-    .container {
+    .containerPreguntas {
         max-width: 1300px;
         margin: 0 auto;
         padding: 20px;
         text-align: center;
         position: relative;
+        margin-top: 130px;
       }
      
       .tituloPregunta{
         font-size:larger;
         font-family: CercoDEMO-Regular;
         color: rgb(37, 37, 37);
+        
      } 
 
      .question{
@@ -100,6 +102,7 @@
       .question-container {
         margin-bottom: 20px;
       }
+      
       
       .btn-container {
         display: flex;
@@ -119,6 +122,10 @@
         cursor: pointer;
         transition: background-color 0.3s;
         font-family: CercoDEMO-Regular;
+      }
+
+      .btn.wrong{
+        background-color: #e74c3c;
       }
       
       .btn:hover {
@@ -249,8 +256,64 @@
         height: 6rem;
         width: 100px;
       }
-      
+
+      .img-frontend{
+        margin-left: 400px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        opacity: 0; /* Inicialmente oculto */
+        transform: translateY(-20px);
+        animation: fadeSlideIn 3.5s ease-in-out forwards;
+      }
+
+      .containerIntro2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+        background-image: url('./img/backgroundgradiant.png'); /* Cambia la ruta por la ubicación de tu imagen */
+        background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+        background-position: center; /* Centra la imagen en el contenedor */
+      }
     
+      .titulo-introhtml{
+        font-size: 2.0rem;
+        font-family: CercoDEMO-Black;
+        color: #b2cace;
+        margin-top: 100px;
+        opacity: 0; /* Inicialmente oculto */
+        transform: translateY(-20px);
+        animation: fadeSlideIn 7.5s ease-in-out forwards;
+      }
+
+      .texto-introhtml{
+        font-size: 1.2rem;
+        font-family: CercoDEMO-Medium;
+        color: #000000;
+        max-width: 50%;
+        margin-top: 100px;
+      }
+      
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    
+    
+      
+      /* Animación para mostrar y desplazar elementos */
+      @keyframes fadeSlideIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .dropdown-item{
+        font-family: CercoDEMO-Regular;
+      }
       
       @media (max-width:700px){
         .img-carousel{
