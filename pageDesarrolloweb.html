@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/pageDesarrolloweb.css">
     <link rel="icon" href="./img/LogoOmbu.PNG">
+    
+
   </head>
   <body>
     <main>
@@ -25,7 +27,7 @@
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-1 fs-5">
                 <li class="nav-item">
                   <img class="img m-1" src="./img/house-door.svg" alt="a">
-                  <a class="nav-link button-style" aria-current="page" href="./pageInicio.html">Home</a>
+                  <a class="nav-link button-style" aria-current="page" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <img class="img m-1" src="./img/people.svg" alt="people">
@@ -33,7 +35,7 @@
                 </li>
 								<li class="nav-item">
                   <img class="img m-1" src="./img/star.svg" alt="people">
-                  <a class="nav-link button-style" href="./pageInicio.html">Juegos</a>
+                  <a class="nav-link button-style" href="./index.html">Juegos</a>
                 </li>
                 <li class="nav-item dropdown">
                   <img class="img m-1" src="./img/hdd-stack.svg" alt="planilla">
@@ -73,8 +75,17 @@
 
             HTML (Hypertext Markup Language) es el lenguaje de marcado estándar utilizado para crear páginas web. Permite estructurar y presentar el contenido de una página web, lo que incluye texto, imágenes, enlaces y otros elementos multimedia. Para lograr esto, HTML utiliza una serie de etiquetas o "tags" que definen la estructura y el significado del contenido en una página web.</p>
 
-            <p class="texto-introhtml">En este momento aprenderemos como usar nuestras etiquetas más comunes dentro de lo que es el HTML, empezando en orden.</p>               
+            <p class="texto-introhtml">En este momento aprenderemos como usar nuestras etiquetas más comunes dentro de lo que es el HTML, empezando por como comenzar nuestro proyecto en Visual Studio Code.</p>               
         </div>
+
+        <section class="video-demostrativo">
+          <button id="mostrarVideoBtn1">¿Como crear nuestro proyecto?</button>
+          <div id="videoPopup1" class="popup">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/opgGJM1tpZk?si=S2QY6EVP84SLwq_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button id="cerrarVideoBtn1">Cerrar Video</button>
+        </div>
+
+        </section>
 
       
 
@@ -94,8 +105,19 @@
                   <!-- Sección de texto en el lado derecho -->
                   <div class="text-right">
                       <h2 class="texto-etiqueta">ETIQUETA (PASO 1) &lt;body&gt</h2>
+                      <p>Para comenzar nuestro proyecto necesitamos crear dentro de nuestra etiqueta &lt;html&gt &lt;/html&gt lo que es nuestro body, es decir, el cuerpo de nuestro proyecto. Todo lo que pongamos dentro será la parte visible de nuestro proyecto.</p>
                       <img src="./img/body.png" alt="">     
-                      <input type="text" id="answerBody" placeholder="Escribe la respuesta correcta">               
+                      <h4>Practiquemos nuestra etiqueta body</h2>
+                        <label for="answerBody">Ingresa el texto &lt;body&gt;&lt;/body&gt;:</label>
+                        <input type="text" id="answerBody">
+                        <button id="validarBodyBtn">Validar</button>
+                        <p id="resultadoBody"></p>
+                        <p id="resultado"></p>
+                        <button id="mostrarVideoBtn2">Demostración body</button>
+                        <div id="videoPopup2" class="popup">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/HOXzlnNUNvM?si=JxXPY1aogLq37mQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <button id="cerrarVideoBtn2">Cerrar Video</button>
+                      </div>             
                   </div>
               </div>
           </div>
@@ -116,12 +138,21 @@
                 <!-- Sección de texto en el lado derecho -->
                 <div class="text-right">
                     <h2 class="texto-etiqueta">ETIQUETA (PASO 2) &lt;header&gt</h2>
-                    <img src="./img/header.png" alt="">   
-                    <input type="text" id="answerBody" placeholder="Escribe la respuesta correcta">                 
+                    <p>Una vez tengamos creado nuestro body, lo siguiente que tocará hacer es crear un encabezado a la pagina, todo lo que irá en nuestra parte superior, para poder escribir un titulo, enlaces, o informacion importante. </p>
+                    <p>Nuestro código deberia quedar de la siguiente manera:</p>
+                    <img src="./img/header.png" alt="">
+                    <h4>Practiquemos nuestra etiqueta header</h2>
+                      <label for="answerHeader">Ingresa el texto &lt;header&gt;&lt;/header&gt;:</label>
+                      <input type="text" id="answerHeader">
+                      <button id="validarHeaderBtn">Validar</button>
+                      <p id="resultadoHeader"></p>
+                      
+                                 
                 </div>
             </div>
         </div>
     </div>
+    
 
     <div class="container-card1">
       <div class="row">
@@ -138,11 +169,74 @@
               <!-- Sección de texto en el lado derecho -->
               <div class="text-right">
                   <h2 class="texto-etiqueta">ETIQUETA (PASO 3) &lt;nav&gt</h2>
-                  <img src="./img/navbar.png" alt="">  
-                  <input type="text" id="answerBody" placeholder="Escribe la respuesta correcta">                  
+                  <p>Ahora vamos a crear una sección de navegación en una página web. Esta misma contiene enlaces que permiten a los usuarios moverse entre diferentes partes del sitio web o acceder a páginas relacionada, pueden ser un buscador o un boton de HOME.</p>
+                  <p>Nuestro código debería quedar de la siguiente manera:</p>
+                  <img src="./img/navexample.png" alt="">  
+                  <h4>Practiquemos nuestra etiqueta nav</h2>
+                    <label for="answerNav">Ingresa el texto &lt;nav&gt;&lt;/nav&gt;:</label>
+                    <input type="text" id="answerNav">
+                    <button id="validarNavBtn">Validar</button>
+                    <p id="resultadoNav"></p>               
               </div>
           </div>
       </div>
+  </div>
+
+  <div class="container-card1">
+    <div class="row">
+        <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad izquierda de la pantalla -->
+          <img src="./img/listas.gif" class="card-img-top" alt="...">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">&lt;ol&gt - &lt;ul&gt - y &lt;li&gt</h5>
+                  <p class="card-text">  en HTML, las etiquetas &lt;ol&gt, &lt;ul&gt, y &lt;li&gt se utilizan para crear listas ordenadas y no ordenadas, y para definir los elementos individuales de la lista.
+                    <p class="card-text"> La etiqueta &lt;li&gt se utiliza para definir cada elemento individual en una lista, ya sea ordenada o no ordenada. Debe estar contenida dentro de una etiqueta &lt;ol&gt o &lt;ul&gt para indicar qué lista pertenece.</p>
+                    <p class="card-text">&lt;ol&gt&lt;/ol&gt (Ordered List - Lista Ordenada):
+                      La etiqueta &lt;ol&gt se utiliza para crear listas ordenadas, donde los elementos de la lista se enumeran automáticamente con números o letras. Cada elemento de la lista se define utilizando la etiqueta &lt;li&gt.</p>
+                      <p class="card-text">&lt;ul&gt&lt;/ul&gt (Unordered List - Lista No Ordenada):
+                        La etiqueta &lt;ul&gt se utiliza para crear listas no ordenadas, donde los elementos de la lista no se numeran y generalmente se presentan con viñetas (puntos, círculos, cuadrados, etc.). Al igual que con las listas ordenadas, cada elemento de la lista se define utilizando la etiqueta &lt;li&gt..</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad derecha de la pantalla -->
+            <!-- Sección de texto en el lado derecho -->
+            <div class="text-right">
+                <h2 class="texto-etiqueta">ETIQUETA (PASO 4) &lt;ol&gt - &lt;ul&gt - y &lt;li&gt</h2>
+                <p>Las listas en HTML se utilizan para organizar y presentar información de una manera estructurada y ordenada. Hay tres tipos principales de listas en HTML:
+                  &lt;ol&gt - &lt;ul&gt - y &lt;li&gt</p>
+                <img src="./img/listas.png" alt="">  
+
+                <p>Vé a tu visual studio code y agrega listas ordenadas dentro de tu navbar para poder crear botones</p>
+                
+                                  
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container-card1">
+    <div class="row">
+        <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad izquierda de la pantalla -->
+          <img src="./img/h1h2.gif" class="card-img-top" alt="...">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">&lt;h1&gt, &lt;h2&gt, &lt;h3&gt
+                  <p class="card-text">Las etiquetas &lt;h1&gt, &lt;h2&gt, &lt;h3&gt, y así sucesivamente hasta &lt;h6&gt, se utilizan en HTML para definir los encabezados o títulos de una página web. Cada una de estas etiquetas representa un nivel de encabezado diferente, donde &lt;h1&gt es el encabezado principal y &lt;h6&gt es el encabezado de nivel más bajo. 
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad derecha de la pantalla -->
+            <!-- Sección de texto en el lado derecho -->
+            <div class="text-right">
+                <h2 class="texto-etiqueta">ETIQUETA (PASO 5) &lt;h1&gt, &lt;h2&gt, &lt;h3&gt</h2>
+                <p>Esta etiqueta se utilizan en HTML para definir los encabezados o títulos de una página web. Cada una de estas etiquetas representa un nivel de encabezado diferente
+                  &lt;h1&gt, &lt;h2&gt, &lt;h3&gt</p>
+                <img src="./img/h1h2.png" alt="">  
+                
+                                  
+            </div>
+        </div>
+    </div>
   </div>
 
   <div class="container-card1">
@@ -159,9 +253,14 @@
         <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad derecha de la pantalla -->
             <!-- Sección de texto en el lado derecho -->
             <div class="text-right">
-                <h2 class="texto-etiqueta">ETIQUETA (PASO 4) &lt;section&gt</h2>
+                <h2 class="texto-etiqueta">ETIQUETA (PASO 5) &lt;section&gt</h2>
+                <p>Es importante que para manejar nuestro código en orden y llevarlo bien visiblemente a la hora de programar, saber dividir en secciones de lo que estamos trabajando, para eso usaremos la siguiente etiqueta.</p>                
                 <img src="./img/section.png" alt="">  
-                <input type="text" id="answerBody" placeholder="Escribe la respuesta correcta">                  
+                <h4>Practiquemos nuestra etiqueta section</h2>
+                  <label for="answerSection">Ingresa el texto &lt;section&gt;&lt;/section&gt;:</label>
+                  <input type="text" id="answerSection">
+                  <button id="validarSectionBtn">Validar</button>
+                  <p id="resultadoSection"></p>               
             </div>
         </div>
     </div>
@@ -181,9 +280,14 @@
       <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad derecha de la pantalla -->
           <!-- Sección de texto en el lado derecho -->
           <div class="text-right">
-              <h2 class="texto-etiqueta">ETIQUETA (PASO 5) &lt;p&gt</h2>
+              <h2 class="texto-etiqueta">ETIQUETA (PASO 6) &lt;p&gt</h2>
+              <p>Toda página web lleva un contenido dentro, en este caso lo que vamos a aprender es a crear un párrafo para darle informacion a nuestra web. Puede ser informacion de lo que ustedes quieran!</p> 
               <img src="./img/p.png" alt="">  
-              <input type="text" id="answerBody" placeholder="Escribe la respuesta correcta">
+              <h4>Practiquemos nuestra etiqueta navbar</h2>
+              <label for="answerParagraph">Ingresa el texto &lt;p&gt;&lt;/p&gt;:</label>
+              <input type="text" id="answerParagraph">
+              <button id="validarParagraphBtn">Validar</button>
+              <p id="resultadoParagraph"></p>
                                 
           </div>
       </div>
@@ -205,37 +309,20 @@
       <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad derecha de la pantalla -->
           <!-- Sección de texto en el lado derecho -->
           <div class="text-right">
-              <h2 class="texto-etiqueta">ETIQUETA (PASO 6) &lt;img&gt - &lt;a&gt</h2>
-              <img src="./img/img-a.png" alt="">  
+              <h2 class="texto-etiqueta">ETIQUETA (PASO 7) &lt;img&gt - &lt;a&gt</h2>
+              <p>Siempre es bueno tener imagenes y links que le den una estética mas bonita a nuestro proyecto, para eso usaremos las siguientes etiquetas que nos permitiran agregar imágenes y link para así poder orientarnos mejor.</p>
+              <img src="./img/img-a.png" alt=""> 
+              <h4>Practiquemos nuestra etiqueta navbar</h2>
+              <label for="answerImg">Ingresa el texto &lt;img&gt;&lt;/img&gt;:</label>
+              <input type="text" id="answerImg">
+              <button id="validarImgBtn">Validar &lt;img&gt;</button>
+              <p id="resultadoImg"></p> 
+              <label for="answerLink">Ingresa el texto &lt;a&gt;&lt;/a&gt;:</label>
+              <input type="text" id="answerLink">
+              <button id="validarLinkBtn">Validar &lt;a&gt;</button>
+              <p id="resultadoLink"></p>
               
-              <input type="text" id="answerBody" placeholder="Escribe la respuesta correcta">
-                                
-          </div>
-      </div>
-  </div>
-</div>
-<div class="container-card1">
-  <div class="row">
-      <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad izquierda de la pantalla -->
-        <img src="./img/listas.gif" class="card-img-top" alt="...">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">&lt;ol&gt - &lt;ul&gt - y &lt;li&gt</h5>
-                <p class="card-text">  en HTML, las etiquetas &lt;ol&gt, &lt;ul&gt, y &lt;li&gt se utilizan para crear listas ordenadas y no ordenadas, y para definir los elementos individuales de la lista.
-                  <p class="card-text"> La etiqueta &lt;li&gt se utiliza para definir cada elemento individual en una lista, ya sea ordenada o no ordenada. Debe estar contenida dentro de una etiqueta &lt;ol&gt o &lt;ul&gt para indicar qué lista pertenece.</p>
-                  <p class="card-text">&lt;ol&gt&lt;/ol&gt (Ordered List - Lista Ordenada):
-                    La etiqueta &lt;ol&gt se utiliza para crear listas ordenadas, donde los elementos de la lista se enumeran automáticamente con números o letras. Cada elemento de la lista se define utilizando la etiqueta &lt;li&gt.</p>
-                    <p class="card-text">&lt;ul&gt&lt;/ul&gt (Unordered List - Lista No Ordenada):
-                      La etiqueta &lt;ul&gt se utiliza para crear listas no ordenadas, donde los elementos de la lista no se numeran y generalmente se presentan con viñetas (puntos, círculos, cuadrados, etc.). Al igual que con las listas ordenadas, cada elemento de la lista se define utilizando la etiqueta &lt;li&gt..</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-lg-6"> <!-- Utiliza col-lg-6 para la mitad derecha de la pantalla -->
-          <!-- Sección de texto en el lado derecho -->
-          <div class="text-right">
-              <h2 class="texto-etiqueta">ETIQUETA (PASO 7) &lt;ol&gt - &lt;ul&gt - y &lt;li&gt</h2>
-              <img src="./img/listas.png" alt="">  
-              <input type="text" id="answerBody" placeholder="Escribe la respuesta correcta">
+              
                                 
           </div>
       </div>
@@ -250,6 +337,37 @@
             <button id="checkButton">Verificar</button>
             <button id="nextButton" style="display: none;">Siguiente</button>
           </div>
+
+        </section>
+
+        <section>
+          <h1>Ahora aprendemos a usar algunas etiquetas de estilos.</h1>
+          <p class="texto-etiqueta">CSS (Cascading Style Sheets) es un lenguaje de programación utilizado en diseño web. Se utiliza para controlar la presentación y el estilo visual de las páginas HTML, permitiendo definir colores, fuentes, diseños y otros aspectos visuales de un sitio web para lograr un diseño coherente y atractivo.</p>
+       
+        </section>
+
+
+
+
+
+
+
+          <section>
+
+            <button id="openModalBtn" class="minimal-button">Abrir Pop-up</button>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="carousel">
+            <img src="./img/desarrolloweb.png" alt="Imagen 1">
+            <img src="imagen2.jpg" alt="Imagen 2">
+            <img src="imagen3.jpg" alt="Imagen 3">
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </div>
+
+
+          </section>
 
 
       <section class="footer">
